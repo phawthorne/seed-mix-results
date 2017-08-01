@@ -1,7 +1,8 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="lib/d3.parcoords.js"></script>
 <link rel="stylesheet" type="text/css" href="css/d3.parcoords.css">
-<div id="example" class="parcoords" style="width:960px;height:200px"></div>
+<h2>30 species results</h2>
+<div id="spec30" class="parcoords" style="width:960px;height:200px"></div>
 
 <script>
 // linear color scale
@@ -15,7 +16,7 @@ var pc1;
 
 // load csv file and create the chart
 d3.csv('data/mix_summary_stats.csv', function(data) {
-  pc1 = d3.parcoords()("#example")
+  pc1 = d3.parcoords()("#spec30")
     .data(data)
     .hideAxis(["name"])
     .composite("darken")
