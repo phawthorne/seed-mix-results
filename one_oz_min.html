@@ -1,4 +1,4 @@
-<head><title>Seed Mix GA Results</title>
+<head><title>Seed Mix GA Results: version 2</title>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="lib/d3.parcoords.js"></script>
@@ -6,7 +6,9 @@
 </head>
 
 <body>
-<a href="one_oz_min.html">Version 2 results</a>
+
+<p><b>Seed mix runs v2</b> These runs impose a 1 oz minimum (out of 10 lbs total). They also ran for 10000 generations vs 2000 for previous set.</p>
+
 <h2>15 species results</h2>
 <div id="spec15" class="parcoords" style="width:960px;height:200px"></div>
 
@@ -35,7 +37,7 @@ var blue_to_brown = d3.scale.linear()
 var pc1;
 
 // load csv file and create the chart
-d3.csv('data/mix_summary_stats_15.csv', function(data) {
+d3.csv('data/1oz_min_10k_gens_15_spec.csv', function(data) {
   pc1 = d3.parcoords()("#spec15")
     .data(data)
     .hideAxis(["name"])
@@ -98,7 +100,7 @@ var blue_to_brown = d3.scale.linear()
 var pc1;
 
 // load csv file and create the chart
-d3.csv('data/mix_summary_stats_30.csv', function(data) {
+d3.csv('data/1oz_min_10k_gens_30_spec.csv', function(data) {
   pc1 = d3.parcoords()("#spec30")
     .data(data)
     .hideAxis(["name"])
@@ -161,7 +163,7 @@ var blue_to_brown = d3.scale.linear()
 var pc1;
 
 // load csv file and create the chart
-d3.csv('data/mix_summary_stats_45.csv', function(data) {
+d3.csv('data/1oz_min_10k_gens_45_spec.csv', function(data) {
   pc1 = d3.parcoords()("#spec45")
     .data(data)
     .hideAxis(["name"])
